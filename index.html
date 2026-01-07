@@ -991,6 +991,7 @@
   </div>
 </section>
 
+
 <!-- =========================
      TESTIMONIAL + EXPERIENCE SECTION
      ========================= -->
@@ -999,35 +1000,37 @@
 
     <!-- LEFT: Testimonials -->
     <div class="xp-left" aria-label="Testimonials">
-      <img class="xp-bg" src="images/testimonial-bg.jpg" alt="" aria-hidden="true">
+      <img class="xp-bg" src="testimonial-bg.png" alt="" aria-hidden="true">
 
       <div class="xp-left-overlay">
         <h3 class="xp-left-title">EXCEEDED ALL<br>EXPECTATIONS</h3>
 
-        <!-- ✅ Arrows + paragraph move together as ONE unit -->
-        <div class="xp-quote-row">
-          <button class="xp-nav xp-prev" type="button" aria-label="Previous testimonial">
-            <!-- paste LEFT arrow SVG here -->
-          </button>
+        <!-- ✅ Paragraph on top, arrows underneath (matches your screenshot) -->
+        <div class="xp-quote-area">
+          <p class="xp-quote" id="testimonialText">
+            From the moment I walked in to the final mirror check, the service was top-tier. Clean shop,
+            great energy, and the cut came out exactly how I wanted. My fade was so sharp I almost didn’t
+            recognize myself.
+          </p>
 
-          <div class="xp-quote-wrap">
-            <p class="xp-quote" id="testimonialText">
-              From the moment I walked in to the final mirror check, the service was top-tier. Clean shop,
-              great energy, and the cut came out exactly how I wanted. My fade was so sharp I almost didn’t
-              recognize myself.
-            </p>
+            <!-- ONLY these change -->
+        <div class="xp-client">
+            <img class="xp-client-img" id="clientImg" src="client-1.png" alt="Client photo">
+            <p class="xp-client-name" id="clientName">— Marcus T., Client</p>
+        </div>
+          <div class="xp-nav-row" aria-label="Testimonial navigation">
+            <button class="xp-nav xp-prev" type="button" aria-label="Previous testimonial">
+              <!-- paste LEFT arrow SVG here -->
+            </button>
+
+            <button class="xp-nav xp-next" type="button" aria-label="Next testimonial">
+              <!-- paste RIGHT arrow SVG here -->
+            </button>
           </div>
-
-          <button class="xp-nav xp-next" type="button" aria-label="Next testimonial">
-            <!-- paste RIGHT arrow SVG here -->
-          </button>
         </div>
 
         <!-- ONLY these change -->
-        <div class="xp-client">
-          <img class="xp-client-img" id="clientImg" src="images/client-1.jpg" alt="Client photo">
-          <p class="xp-client-name" id="clientName">— Marcus T., Client</p>
-        </div>
+
       </div>
     </div>
 
@@ -1050,8 +1053,6 @@
 
   </div>
 </section>
-
-<!-- JS stays the same (it targets: #testimonialText, #clientImg, #clientName, .xp-prev, .xp-next) -->
 
 
 
