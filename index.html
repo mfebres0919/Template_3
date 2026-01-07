@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Barber Shop || Home Page || Houston, TX</title>
+</head>
+<body>
+    
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:+84 1985 33 999" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                +84 1985 33 999
+            </a>
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+                                
+
+
+<!-- HERO SECTION -->
+ <section class="hero-section" id="home">
+    <div class="hero-container">
+        <h1>HOUSTON'S BEST BARBER</h1>
+        <a class="btn-1" href="#">BOOK TODAY</a>
+    </div>
+ </section>
+
+
+
+<!-- ABOUT / MEET YOUR BARBER SECTION -->
+<section class="about-section" id="about">
+  <div class="about-container">
+
+    <!-- LEFT: TEXT CARD -->
+    <div class="about-card">
+      <h2 class="about-title">MEET YOUR BARBER</h2>
+
+      <p class="about-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet
+        consectetur adipisicing elit quisque faucibus. 
+      </p>
+      <p class="about-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet
+        consectetur adipisicing elit quisque faucibus. 
+      </p>
+
+      <p class="about-signature">KayBandz</p>
+    </div>
+
+    <!-- RIGHT: IMAGE + DECOR -->
+    <div class="about-visual">
+
+      <!-- floating decor (CSS shapes) -->
+      <span class="about-circle about-circle--top-right" aria-hidden="true"></span>
+      <span class="about-circle about-circle--bottom-left" aria-hidden="true"></span>
+
+      <!-- red background shape behind photo (CSS) -->
+      <div class="about-red-shape" aria-hidden="true"></div>
+
+      <!-- photo -->
+      <div class="about-photo">
+        <!-- use svg OR img. If your svg is a file, keep it like this -->
+        <img src="images/barber-smile.svg" alt="Barber smiling while cutting hair">
+      </div>
+
+      <!-- dotted grid (CSS) -->
+      <div class="about-dots" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services-accordion">
+    <!-- <div class="bubble-bg" aria-hidden="true"></div> -->
+    <div class="accordion-logo reveal reveal-logo">
+        <h1>SERVICES OFFERED</h1>
+    </div>
+    <!-- STAR BACKGROUND -->
+    <div class="star-field">
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="star"></span>
+        <span class="shooting-star"></span>
+        <span class="shooting-star shooting-star-2"></span>
+    </div>
+
+    <!-- ACCORDION CONTENT -->
+    <div class="accordion-content reveal reveal-container">
+
+
+       <!-- FIRST SERVICE ITEM -->
+       <div class="service-item">
+            <button class="service-header service-1">
+               <h2>Starter Locs</h2>
+               <span class="chevron">+</span>
+            </button>
+            
+            <!-- SUBSERVICE WRAPPER -->
+            <div class="service-content">
+
+                <!-- SUBSERVICE #1 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Starter Locs</h4>
+                        <p>2 hours</p>
+                        <p>$180</p>
+                        <p class="pink-message">Please come with hair washed and blow-dried</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>
+
+                <!-- SUBSERVICE #2 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Starter Locs + Style</h4>
+                        <p>2 hours</p>
+                        <p>$195</p>
+                        <p class="pink-message">Please come with hair washed and blow-dried</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>
+            </div>
+        </div>
+
+
+       <!-- SECOND SERVICE ITEM -->
+       <div class="service-item">
+            <button class="service-header">
+               <h2>Retwist & Maintenance</h2>
+               <span class="chevron">+</span>
+            </button>
+            
+            <!-- SUBSERVICE WRAPPER -->
+            <div class="service-content">
+
+                <!-- SUBSERVICE #1 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Retwist</h4>
+                        <p>2 hours</p>
+                        <p>$95</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>
+                <!-- SUBSERVICE #2 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Retwist + Style</h4>
+                        <p>2 hours</p>
+                        <p>$110</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>
+                <!-- SUBSERVICE #3 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Wash + Retwist + Style</h4>
+                        <p>2 hours</p>
+                        <p>$125</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div> 
+                <!-- SUBSERVICE #4 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Free Form Retwist</h4>
+                        <p>2 hours</p>
+                        <p>$145</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>  
+                <!-- SUBSERVICE #5 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Free Form Retwist + Style</h4>
+                        <p>2 hours</p>
+                        <p>$160</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>                 
+            </div>
+        </div>        
+
+       <!-- THIRD SERVICE ITEM -->
+       <div class="service-item">
+            <button class="service-header">
+               <h2>Sisterlocs</h2>
+               <span class="chevron">+</span>
+            </button>
+            
+            <!-- SUBSERVICE WRAPPER -->
+            <div class="service-content">
+
+                <!-- SUBSERVICE #1 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Sisterlocs Install</h4>
+                        <p>5 hours + 40 minutes</p>
+                        <p>$850.00</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>
+
+                <!-- SUBSERVICE #2 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>Sisterlocs Maintenance</h4>
+                        <p>3 hours</p>
+                        <p>$325.00</p>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>
+            </div>
+        </div>
+
+       <!-- FOURTH SERVICE ITEM -->
+       <div class="service-item">
+            <button class="service-header">
+               <h2>Extensions & Enhancements</h2>
+               <span class="chevron">+</span>
+            </button>
+            
+            <!-- SUBSERVICE WRAPPER -->
+            <div class="service-content">
+
+                <!-- SUBSERVICE #1 -->
+                <div class="sub-service">
+                    <div class="sub-info">
+                        <h4>2-Strand Extensions (Marley Twist Hair)</h4>
+                        <p>3 hours</p>
+                        <p>$250.00</p>
+                        <p class="pink-message">This service is to give ›a longer effect to shorter locs.</p><br>
+                    </div>
+                    <button class="book-btn" onclick="openBooking()">BOOK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     CLIENT SHOWCASE SECTION
+     ========================= -->
+<section class="showcase-section" id="showcase">
+  <div class="showcase-container">
+
+    <header class="showcase-header">
+      <p class="showcase-kicker">CLIENT SHOWCASE</p>
+      <h2 class="showcase-title">FRESH FROM THE<br>CHAIR</h2>
+    </header>
+
+    <div class="showcase-stage">
+      <!-- BACKGROUND DECOR (CSS positions these) -->
+      <span class="decor-circle decor-circle--black" aria-hidden="true"></span>
+      <span class="decor-circle decor-circle--red decor-circle--red-1" aria-hidden="true"></span>
+      <span class="decor-circle decor-circle--red decor-circle--red-2" aria-hidden="true"></span>
+      <!-- <span class="decor-circle decor-circle--red decor-circle--red-3" aria-hidden="true"></span> -->
+
+      <div class="showcase-carousel" aria-label="Client showcase carousel">
+
+        <!-- TRACK 1 -->
+        <div class="showcase-track showcase-track--left" role="list">
+        <!-- ADDED MORE CARDS (same classes, nothing changed) -->
+        <!-- Paste these inside EACH track: .showcase-track--left and .showcase-track--right -->
+
+        <!-- ====== EXTRA CARDS (x20) ====== -->
+        <article class="showcase-card" role="listitem">
+            <img class="showcase-img" src="images/client-1.jpg" alt="Skin fade with lineup result">
+            <div class="showcase-content">
+                <div class="showcase-chips">
+                <span class="chip chip--red">Skin Fade</span>
+                <span class="chip">Enhancement</span>
+                </div>
+                <h3 class="card-title">SKIN FADE + LINEUP</h3>
+                <div class="card-bottom">
+                <p class="card-desc">Clean blend, sharp lineup, and a smooth finish that stays fresh all day.</p>
+                <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+            <img class="showcase-img" src="images/client-2.jpg" alt="Skin fade with lineup result">
+            <div class="showcase-content">
+                <div class="showcase-chips">
+                <span class="chip chip--red">Skin Fade</span>
+                <span class="chip">Enhancement</span>
+                </div>
+                <h3 class="card-title">SKIN FADE + LINEUP</h3>
+                <div class="card-bottom">
+                <p class="card-desc">Crisp lines, clean taper, and a natural enhancement for a polished look.</p>
+                <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+            <img class="showcase-img" src="images/client-3.jpg" alt="Low taper fade result">
+            <div class="showcase-content">
+                <div class="showcase-chips">
+                <span class="chip chip--red">Low Taper</span>
+                <span class="chip">Lineup</span>
+                </div>
+                <h3 class="card-title">LOW TAPER + LINEUP</h3>
+                <div class="card-bottom">
+                <p class="card-desc">A clean low taper with a sharp edge-up for an everyday fresh finish.</p>
+                <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-4.jpg" alt="Mid fade with beard result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Mid Fade</span>
+            <span class="chip">Beard</span>
+            </div>
+            <h3 class="card-title">MID FADE + BEARD</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Balanced fade with a shaped beard for a clean, confident profile.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-5.jpg" alt="Burst fade with curls result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Burst Fade</span>
+            <span class="chip">Curls</span>
+            </div>
+            <h3 class="card-title">BURST FADE + CURLS</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Burst fade around the ear with a clean curl finish on top.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-6.jpg" alt="Buzz cut with lineup result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Buzz Cut</span>
+            <span class="chip">Lineup</span>
+            </div>
+            <h3 class="card-title">BUZZ CUT + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Simple, clean buzz with a sharp lineup for a crisp look.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-7.jpg" alt="Drop fade with lineup result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Drop Fade</span>
+            <span class="chip">Enhancement</span>
+            </div>
+            <h3 class="card-title">DROP FADE + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Drop fade that hugs the head with a sharp, clean finish.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-8.jpg" alt="High taper with waves result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">High Taper</span>
+            <span class="chip">Waves</span>
+            </div>
+            <h3 class="card-title">HIGH TAPER + WAVES</h3>
+            <div class="card-bottom">
+            <p class="card-desc">High taper cleanup that keeps the waves laid and the edges crisp.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-9.jpg" alt="Kids cut result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Kids Cut</span>
+            <span class="chip">Lineup</span>
+            </div>
+            <h3 class="card-title">KIDS CUT + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Kid-friendly cut with a clean finish, perfect for school days.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-10.jpg" alt="Scissor cut result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Scissor Cut</span>
+            <span class="chip">Style</span>
+            </div>
+            <h3 class="card-title">SCISSOR CUT + STYLE</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Scissor-focused shape with a clean style finish for a premium look.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-11.jpg" alt="Temple taper result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Temple Taper</span>
+            <span class="chip">Lineup</span>
+            </div>
+            <h3 class="card-title">TEMPLE TAPER + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Clean temple taper with a sharp edge-up for a fresh reset.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-12.jpg" alt="Beard shape up result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Beard</span>
+            <span class="chip">Shape Up</span>
+            </div>
+            <h3 class="card-title">BEARD SHAPE + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Defined beard lines with a clean neckline for a sharper profile.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-13.jpg" alt="High fade result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">High Fade</span>
+            <span class="chip">Lineup</span>
+            </div>
+            <h3 class="card-title">HIGH FADE + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">High fade with clean blending and a sharp edge-up finish.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-14.jpg" alt="Low fade result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Low Fade</span>
+            <span class="chip">Enhancement</span>
+            </div>
+            <h3 class="card-title">LOW FADE + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Low fade blend with a clean enhancement for an extra crisp look.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-15.jpg" alt="Blowout taper result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Blowout</span>
+            <span class="chip">Taper</span>
+            </div>
+            <h3 class="card-title">BLOWOUT TAPER</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Clean blowout taper with shape and volume for a standout look.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-16.jpg" alt="Design cut result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Design</span>
+            <span class="chip">Fade</span>
+            </div>
+            <h3 class="card-title">FADE + DESIGN</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Custom design detail added to a clean fade for extra personality.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-17.jpg" alt="Slick back cut result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Classic</span>
+            <span class="chip">Style</span>
+            </div>
+            <h3 class="card-title">CLASSIC CUT + STYLE</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Classic cut with a smooth style finish for a clean, timeless look.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-18.jpg" alt="Afro taper result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Afro Taper</span>
+            <span class="chip">Lineup</span>
+            </div>
+            <h3 class="card-title">AFRO TAPER + LINEUP</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Clean taper with a sharp lineup to keep the shape looking fresh.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card" role="listitem">
+        <img class="showcase-img" src="images/client-19.jpg" alt="Edge up result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Edge-Up</span>
+            <span class="chip">Quick</span>
+            </div>
+            <h3 class="card-title">EDGE-UP + DETAIL</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Quick cleanup with crisp lines to keep you fresh between cuts.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        <article class="showcase-card is-muted" role="listitem">
+        <img class="showcase-img" src="images/client-20.jpg" alt="Mohawk fade result">
+        <div class="showcase-content">
+            <div class="showcase-chips">
+            <span class="chip chip--red">Mohawk</span>
+            <span class="chip">Fade</span>
+            </div>
+            <h3 class="card-title">MOHAWK + FADE</h3>
+            <div class="card-bottom">
+            <p class="card-desc">Bold mohawk with clean fades on the sides for a sharp look.</p>
+            <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+            </div>
+        </div>
+        </article>
+
+        </div>
+
+        <!-- TRACK 2 -->
+        <div class="showcase-track showcase-track--right" role="list">
+          <!-- Card C -->
+<!-- ADD MORE CARDS (same classes, nothing changed) -->
+<!-- Paste these inside EACH track: .showcase-track--left and .showcase-track--right -->
+
+<!-- ====== EXTRA CARDS (x20) ====== -->
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-1.jpg" alt="Skin fade with lineup result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Skin Fade</span>
+      <span class="chip">Enhancement</span>
+    </div>
+    <h3 class="card-title">SKIN FADE + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Clean blend, sharp lineup, and a smooth finish that stays fresh all day.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-2.jpg" alt="Skin fade with lineup result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Skin Fade</span>
+      <span class="chip">Enhancement</span>
+    </div>
+    <h3 class="card-title">SKIN FADE + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Crisp lines, clean taper, and a natural enhancement for a polished look.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-3.jpg" alt="Low taper fade result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Low Taper</span>
+      <span class="chip">Lineup</span>
+    </div>
+    <h3 class="card-title">LOW TAPER + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">A clean low taper with a sharp edge-up for an everyday fresh finish.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-4.jpg" alt="Mid fade with beard result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Mid Fade</span>
+      <span class="chip">Beard</span>
+    </div>
+    <h3 class="card-title">MID FADE + BEARD</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Balanced fade with a shaped beard for a clean, confident profile.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-5.jpg" alt="Burst fade with curls result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Burst Fade</span>
+      <span class="chip">Curls</span>
+    </div>
+    <h3 class="card-title">BURST FADE + CURLS</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Burst fade around the ear with a clean curl finish on top.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-6.jpg" alt="Buzz cut with lineup result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Buzz Cut</span>
+      <span class="chip">Lineup</span>
+    </div>
+    <h3 class="card-title">BUZZ CUT + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Simple, clean buzz with a sharp lineup for a crisp look.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-7.jpg" alt="Drop fade with lineup result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Drop Fade</span>
+      <span class="chip">Enhancement</span>
+    </div>
+    <h3 class="card-title">DROP FADE + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Drop fade that hugs the head with a sharp, clean finish.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-8.jpg" alt="High taper with waves result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">High Taper</span>
+      <span class="chip">Waves</span>
+    </div>
+    <h3 class="card-title">HIGH TAPER + WAVES</h3>
+    <div class="card-bottom">
+      <p class="card-desc">High taper cleanup that keeps the waves laid and the edges crisp.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-9.jpg" alt="Kids cut result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Kids Cut</span>
+      <span class="chip">Lineup</span>
+    </div>
+    <h3 class="card-title">KIDS CUT + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Kid-friendly cut with a clean finish, perfect for school days.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-10.jpg" alt="Scissor cut result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Scissor Cut</span>
+      <span class="chip">Style</span>
+    </div>
+    <h3 class="card-title">SCISSOR CUT + STYLE</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Scissor-focused shape with a clean style finish for a premium look.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-11.jpg" alt="Temple taper result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Temple Taper</span>
+      <span class="chip">Lineup</span>
+    </div>
+    <h3 class="card-title">TEMPLE TAPER + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Clean temple taper with a sharp edge-up for a fresh reset.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-12.jpg" alt="Beard shape up result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Beard</span>
+      <span class="chip">Shape Up</span>
+    </div>
+    <h3 class="card-title">BEARD SHAPE + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Defined beard lines with a clean neckline for a sharper profile.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-13.jpg" alt="High fade result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">High Fade</span>
+      <span class="chip">Lineup</span>
+    </div>
+    <h3 class="card-title">HIGH FADE + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">High fade with clean blending and a sharp edge-up finish.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-14.jpg" alt="Low fade result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Low Fade</span>
+      <span class="chip">Enhancement</span>
+    </div>
+    <h3 class="card-title">LOW FADE + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Low fade blend with a clean enhancement for an extra crisp look.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-15.jpg" alt="Blowout taper result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Blowout</span>
+      <span class="chip">Taper</span>
+    </div>
+    <h3 class="card-title">BLOWOUT TAPER</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Clean blowout taper with shape and volume for a standout look.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-16.jpg" alt="Design cut result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Design</span>
+      <span class="chip">Fade</span>
+    </div>
+    <h3 class="card-title">FADE + DESIGN</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Custom design detail added to a clean fade for extra personality.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-17.jpg" alt="Slick back cut result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Classic</span>
+      <span class="chip">Style</span>
+    </div>
+    <h3 class="card-title">CLASSIC CUT + STYLE</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Classic cut with a smooth style finish for a clean, timeless look.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-18.jpg" alt="Afro taper result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Afro Taper</span>
+      <span class="chip">Lineup</span>
+    </div>
+    <h3 class="card-title">AFRO TAPER + LINEUP</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Clean taper with a sharp lineup to keep the shape looking fresh.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card" role="listitem">
+  <img class="showcase-img" src="images/client-19.jpg" alt="Edge up result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Edge-Up</span>
+      <span class="chip">Quick</span>
+    </div>
+    <h3 class="card-title">EDGE-UP + DETAIL</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Quick cleanup with crisp lines to keep you fresh between cuts.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+<article class="showcase-card is-muted" role="listitem">
+  <img class="showcase-img" src="images/client-20.jpg" alt="Mohawk fade result">
+  <div class="showcase-content">
+    <div class="showcase-chips">
+      <span class="chip chip--red">Mohawk</span>
+      <span class="chip">Fade</span>
+    </div>
+    <h3 class="card-title">MOHAWK + FADE</h3>
+    <div class="card-bottom">
+      <p class="card-desc">Bold mohawk with clean fades on the sides for a sharp look.</p>
+      <span class="rating"><span class="star" aria-hidden="true">★</span>4.9</span>
+    </div>
+  </div>
+</article>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     TESTIMONIAL + EXPERIENCE SECTION
+     ========================= -->
+<section class="xp-section" id="experience">
+  <div class="xp-shell">
+
+    <!-- LEFT: Testimonials -->
+    <div class="xp-left" aria-label="Testimonials">
+      <img class="xp-bg" src="images/testimonial-bg.jpg" alt="" aria-hidden="true">
+
+      <div class="xp-left-overlay">
+        <h3 class="xp-left-title">EXCEEDED ALL<br>EXPECTATIONS</h3>
+
+        <!-- ✅ Arrows + paragraph move together as ONE unit -->
+        <div class="xp-quote-row">
+          <button class="xp-nav xp-prev" type="button" aria-label="Previous testimonial">
+            <!-- paste LEFT arrow SVG here -->
+          </button>
+
+          <div class="xp-quote-wrap">
+            <p class="xp-quote" id="testimonialText">
+              From the moment I walked in to the final mirror check, the service was top-tier. Clean shop,
+              great energy, and the cut came out exactly how I wanted. My fade was so sharp I almost didn’t
+              recognize myself.
+            </p>
+          </div>
+
+          <button class="xp-nav xp-next" type="button" aria-label="Next testimonial">
+            <!-- paste RIGHT arrow SVG here -->
+          </button>
+        </div>
+
+        <!-- ONLY these change -->
+        <div class="xp-client">
+          <img class="xp-client-img" id="clientImg" src="images/client-1.jpg" alt="Client photo">
+          <p class="xp-client-name" id="clientName">— Marcus T., Client</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Experience copy -->
+    <div class="xp-right">
+      <h3 class="xp-right-title">YOU’RE NOT JUST<br>ANOTHER APPOINTMENT</h3>
+
+      <div class="xp-right-text">
+        <p>We’re here to make the experience easy from start to finish.</p>
+        <p>You get precision work, a clean environment, and a space that feels good for every age.</p>
+        <p>We don’t rush, we don’t guess, and we don’t send you home “almost” happy.</p>
+        <p>You leave ready for whatever’s next, even if it’s just a quick stop at the grocery store to casually flex the fade.</p>
+      </div>
+
+      <div class="xp-actions">
+        <a class="xp-btn xp-btn--solid" href="#book">BOOK NOW</a>
+        <a class="xp-btn xp-btn--outline" href="#policies">BOOKING POLICIES</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- JS stays the same (it targets: #testimonialText, #clientImg, #clientName, .xp-prev, .xp-next) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
