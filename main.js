@@ -96,31 +96,31 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       text: "From the moment I walked in to the final mirror check, the service was top-tier. Clean shop, great energy, and the cut came out exactly how I wanted. My fade was so sharp I almost didn’t recognize myself.",
       name: "— Marcus T., Client",
-      img: "images/client-1.jpg",
+      img: "client-1.png",
       alt: "Client Marcus"
     },
     {
       text: "Best barber experience I’ve had in a long time. Super professional, took his time, and the lineup was perfect. I left feeling like I had somewhere important to be.",
       name: "— Devin R., Client",
-      img: "images/client-2.jpg",
+      img: "client-1.png",
       alt: "Client Devin"
     },
     {
       text: "I brought my son in and the whole vibe was welcoming. Great with kids, clean setup, and we both walked out fresh. This is our new spot.",
       name: "— Jasmine L., Client",
-      img: "images/client-3.jpg",
+      img: "client-1.png",
       alt: "Client Jasmine"
     },
     {
       text: "Attention to detail is crazy. The blend is smooth, beard is shaped right, and everything looks clean even days later. Worth every penny.",
       name: "— Andre K., Client",
-      img: "images/client-4.jpg",
+      img: "client-1.png",
       alt: "Client Andre"
     },
     {
       text: "Easy booking, on time, and the cut was exactly what I asked for. Comfortable, premium, and I didn’t feel rushed at all.",
       name: "— Chris M., Client",
-      img: "images/client-5.jpg",
+      img: "client-1.png",
       alt: "Client Chris"
     }
   ];
